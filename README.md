@@ -1,12 +1,11 @@
 # appunti-typescript
 
 
-//Fonte Video
+Fonte Video
+https://www.youtube.com/watch?v=BCg4U1FzODs
 
-//https://www.youtube.com/watch?v=BCg4U1FzODs
 
 
-/*
 Installare l’ambiente di Sviluppo :
 
 > sudo npm i -g typescript
@@ -22,7 +21,7 @@ Posso specificare la cartella di destinazione  e la cartella di source
 
 
 
-//Basic types :
+Basic types :
 
 let id : number = 5
 let company : string = 'TraversY media’
@@ -33,11 +32,11 @@ let x : any
 Per creare array :
 let ids  : number  [] = [ 1 , 2 , 3 ,4 ,5 ]
 
-//Tuple
+Tuple
 let person = [numeber , string , boolean] = [1 , 'brad’ , true]
 
 
- //Tuple Array
+Tuple Array
 
 let employee : [ number , string] [] 
 
