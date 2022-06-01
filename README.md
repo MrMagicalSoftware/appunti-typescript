@@ -47,7 +47,7 @@ employee = [
 ]
 
 
-//Unions
+Unions
 
 let pid : string | number = 22
 
@@ -57,7 +57,7 @@ pid = '44'
 
 
 
-//Enum
+Enum
 
 enum Direction1  {	
 	UP = 1,
@@ -78,7 +78,7 @@ enum Direction1  {
 }
 
 
-*/
+
 
 
 Object
@@ -123,7 +123,7 @@ function addNum(x : number , y : number): number {
 }
 
 
-//La funzione prende in ingresso string e numeri
+La funzione prende in ingresso string e numeri
 function stampaLog(message : string | number) : void {
     console.log(message)
 }
@@ -171,7 +171,7 @@ class Person {
 
 const brad = new Person(1 ,"hh")
 
-/Esempio uso di Interface
+Esempio uso di Interface
 
 interface PersonInterface {
     id : number
