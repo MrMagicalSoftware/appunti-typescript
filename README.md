@@ -82,10 +82,10 @@ enum Direction1  {
 */
 
 
-//Object
+Object
 
-//Posso specificare come deve 
-//essere fatto il tipo di dato
+Posso specificare come deve 
+essere fatto il tipo di dato
 
 const user: {
     id:number,  
@@ -96,7 +96,7 @@ const user: {
     name:"Jon"
 }
 
-// Potrei usare il type:
+Potrei usare il type:
 
 type User = {
     id:number,
@@ -109,7 +109,7 @@ const myUser : User = {
 }
 
 
-//Type Assertion
+Type Assertion
 
 let cid : any = 1
 let customerId = <number> cid
@@ -117,7 +117,7 @@ let customerId = <number> cid
 
 
 
-//Funcion
+Funcion
 
 function addNum(x : number , y : number): number {
     return x + y 
@@ -129,7 +129,7 @@ function stampaLog(message : string | number) : void {
     console.log(message)
 }
 
-// Interfaces
+Interfaces
 
 interface UserInterface {
     readonly id : number
@@ -144,10 +144,10 @@ const myUser1 : UserInterface = {
 }
 
 
-//Differenza tra interface e Type
+Differenza tra interface e Type
 
-// interface Point = number | string ---> Errore
-// type Point = number | string
+interface Point = number | string  //---> Errore
+type Point = number | string
 
 
 interface MathFunc {
@@ -157,7 +157,7 @@ interface MathFunc {
 const add : MathFunc = (x : number , y : number) : number => x + y
 
 
-//Classes
+Classes
 
 class Person {
     private id: number
@@ -172,8 +172,7 @@ class Person {
 
 const brad = new Person(1 ,"hh")
 
-
-//Esempio uso di Interface
+/Esempio uso di Interface
 
 interface PersonInterface {
     id : number
@@ -194,7 +193,7 @@ class MyPerson implements PersonInterface {
 
 
 
-//Uso di Extends
+Uso di Extends
 
 class Employee extends Person {
     position : string
@@ -210,7 +209,7 @@ console.log(emp);
 
 
 
-//Generics
+Generics
 
 function getArray<T>(items : T[]): T[]{
     return new Array().concat(items)
@@ -219,19 +218,19 @@ function getArray<T>(items : T[]): T[]{
 let numArray = getArray<number>([1 , 2 , 3 ,4])
 let stringArray = getArray<string>(['dd', 'jj' ,'gg'])
 
-//avendo aggiunto i generic 
-//passando da any a generics questo
-//mi da errore numArray.push('hello')
+avendo aggiunto i generic 
+passando da any a generics questo
+mi da errore numArray.push('hello')
 
 
-//USARE TypeScript con React
+USARE TypeScript con React
 
-// npx create-react-app . --temaple typescript
-// > npm start
+> npx create-react-app . --temaple typescript
+> npm start
 
-//Esempio mi creo un file Header.tsx
+Esempio mi creo un file Header.tsx
 
-/*
+
 
 export interface Props {
     title : string
@@ -249,7 +248,7 @@ const Header = (props : Props) =>{
 
 export default Header
 
-*/
+
 
 
 
