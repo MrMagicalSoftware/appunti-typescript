@@ -173,7 +173,10 @@ const brad = new Person(1 ,"hh")
 
 Esempio uso di Interface
 
-interface PersonInterface {
+interface PersonInterface
+{
+    
+
     id : number
     name:string
 
