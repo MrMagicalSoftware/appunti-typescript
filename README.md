@@ -159,14 +159,14 @@ const add : MathFunc = (x : number , y : number) : number => x + y
 Classes
 
 class Person {
-    private id: number
-    protected name : string
-
-    constructor(id:number , name:string){
-        this.id = id
-        this.name = name
-    }
-
+	
+	private id: number
+	protected name : string
+    	
+	constructor(id:number , name:string){
+        	this.id = id
+        	this.name = name
+    	}
 }
 
 const brad = new Person(1 ,"hh")
@@ -185,12 +185,13 @@ interface PersonInterface
 }
 
 class MyPerson implements PersonInterface {
-    id: number
-    name: string
+    
+	id: number
+    	name: string
 
-    register(): string {
-        throw new Error("Method not implemented.")
-    }
+    	register(): string {
+        	throw new Error("Method not implemented.")
+    	}
 }
 
 
