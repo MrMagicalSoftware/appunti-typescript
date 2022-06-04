@@ -156,9 +156,10 @@ interface MathFunc {
 const add : MathFunc = (x : number , y : number) : number => x + y
 
 
-Classes
+##Classes
 
-class Person {
+class Person
+{
 	
 	private id: number
 	protected name : string
@@ -171,12 +172,10 @@ class Person {
 
 const brad = new Person(1 ,"hh")
 
-Esempio uso di Interface
+#Esempio uso di Interface
 
-interface PersonInterface
-{
+interface PersonInterface {
     
-
     id : number
     name:string
 
@@ -184,6 +183,9 @@ interface PersonInterface
     register():string | number
 }
 
+	
+	
+	
 class MyPerson implements PersonInterface {
     
 	id: number
@@ -196,7 +198,7 @@ class MyPerson implements PersonInterface {
 
 
 
-Uso di Extends
+#Uso di Extends
 
 class Employee extends Person {
     position : string
@@ -250,21 +252,4 @@ const Header = (props : Props) =>{
 }
 
 export default Header
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
