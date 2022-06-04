@@ -200,7 +200,8 @@ class MyPerson implements PersonInterface {
 
 #Uso di Extends
 
-class Employee extends Person {
+class Employee extends Person
+{
     position : string
 
     constructor(id : number , name:string , position : string){
