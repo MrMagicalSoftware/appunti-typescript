@@ -1,16 +1,15 @@
 # appunti-typescript
 
 
-Fonte Video
-https://www.youtube.com/watch?v=BCg4U1FzODs
 
 
 
-Installare l’ambiente di Sviluppo :
+
+# Installare l’ambiente di Sviluppo :
 
 > sudo npm i -g typescript
 
-Controllare tsc -v
+# Controllare tsc -v
 
 Per compilare  :
 
@@ -21,8 +20,9 @@ Posso specificare la cartella di destinazione  e la cartella di source
 
 
 
-Basic types :
+# Basic types :
 
+```
 let id : number = 5
 let company : string = 'TraversY media’
 let isPublished : boolean = true
@@ -32,12 +32,17 @@ let x : any
 Per creare array :
 let ids  : number  [] = [ 1 , 2 , 3 ,4 ,5 ]
 
-Tuple
+```
+
+
+
+# Tuple
 let person = [numeber , string , boolean] = [1 , 'brad’ , true]
 
 
-Tuple Array
+# Tuple Array
 
+```
 let employee : [ number , string] [] 
 
 employee = [
@@ -45,19 +50,22 @@ employee = [
 	[2 , 'Gin’],
 	[3,'Pin']
 ]
+```
 
+# Unions
 
-Unions
-
+```
 let pid : string | number = 22
 
 Con  unions posso specificare e dire che la variabile pid può assumere come valori sia il tipo string che il tipo number
 
 pid = '44'
+```
 
 
+# Enum
 
-Enum
+```
 
 enum Direction1  {	
 	UP = 1,
@@ -77,14 +85,17 @@ enum Direction1  {
 	Right
 }
 
+```
 
 
 
 
-Object
+# Object
 
 Posso specificare come deve 
 essere fatto il tipo di dato
+
+```
 
 const user: {
     id:number,  
@@ -107,29 +118,33 @@ const myUser : User = {
     name:"whhwhwhwh"
 }
 
+```
 
-Type Assertion
+
+# Type Assertion
 
 let cid : any = 1
 let customerId = <number> cid
 //let customerId = cid as number  <---Altra opzione
 
 
+# Funcion
 
-Funcion
-
+```
 function addNum(x : number , y : number): number {
     return x + y 
 }
+```
 
-
+					    
 La funzione prende in ingresso string e numeri
 function stampaLog(message : string | number) : void {
     console.log(message)
 }
 
-Interfaces
+# Interfaces
 
+```
 interface UserInterface {
     readonly id : number
     name : string
@@ -141,10 +156,13 @@ const myUser1 : UserInterface = {
     name:'John',
    
 }
+```				    
 
 
-Differenza tra interface e Type
+# Differenza tra interface e Type
 
+					    
+```					    
 interface Point = number | string  //---> Errore
 type Point = number | string
 
@@ -155,9 +173,12 @@ interface MathFunc {
 
 const add : MathFunc = (x : number , y : number) : number => x + y
 
+```
 
-##Classes
+# Classes
 
+	
+```
 class Person
 {
 	
@@ -172,8 +193,10 @@ class Person
 
 const brad = new Person(1 ,"hh")
 
-#Esempio uso di Interface
-
+```
+	
+# Esempio uso di Interface
+```
 interface PersonInterface {
     
     id : number
@@ -182,10 +205,10 @@ interface PersonInterface {
     //metodi
     register():string | number
 }
-
+```
 	
 	
-	
+	```
 class MyPerson implements PersonInterface {
     
 	id: number
@@ -195,11 +218,13 @@ class MyPerson implements PersonInterface {
         	throw new Error("Method not implemented.")
     	}
 }
+```
 
 
+# Uso di Extends
 
-#Uso di Extends
-
+	
+```
 class Employee extends Person
 {
     position : string
@@ -212,10 +237,12 @@ class Employee extends Person
 
 const emp = new Employee(1 , "jj" , "admin")
 console.log(emp);
+```
 
 
-
-Generics
+# Generics
+	
+```
 
 function getArray<T>(items : T[]): T[]{
     return new Array().concat(items)
@@ -224,12 +251,15 @@ function getArray<T>(items : T[]): T[]{
 let numArray = getArray<number>([1 , 2 , 3 ,4])
 let stringArray = getArray<string>(['dd', 'jj' ,'gg'])
 
+```	
+	
+
 avendo aggiunto i generic 
 passando da any a generics questo
 mi da errore numArray.push('hello')
 
 
-USARE TypeScript con React
+# USARE TypeScript con React
 
 > npx create-react-app . --temaple typescript
 > npm start
@@ -237,7 +267,7 @@ USARE TypeScript con React
 Esempio mi creo un file Header.tsx
 
 
-
+```
 export interface Props {
     title : string
     color?:string
@@ -253,4 +283,7 @@ const Header = (props : Props) =>{
 }
 
 export default Header
-
+```
+	
+Possibili Fonti Video
+https://www.youtube.com/watch?v=BCg4U1FzODs
