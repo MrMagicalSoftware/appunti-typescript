@@ -128,7 +128,7 @@ let customerId = <number> cid
 //let customerId = cid as number  <---Altra opzione
 
 
-# Funcion
+# Functions
 
 ```
 function addNum(x : number , y : number): number {
