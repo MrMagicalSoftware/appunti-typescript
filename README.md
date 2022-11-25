@@ -24,12 +24,12 @@ Posso specificare la cartella di destinazione  e la cartella di source
 
 ```
 let id : number = 5
-let company : string = 'TraversY media’
+let company : string = 'TraversY media'
 let isPublished : boolean = true
 let x : any
 
 
-Per creare array :
+//Per creare array :
 let ids  : number  [] = [ 1 , 2 , 3 ,4 ,5 ]
 
 ```
