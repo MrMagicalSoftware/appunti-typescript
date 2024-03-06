@@ -19,6 +19,15 @@ Per creare un file di configurazione iniziale : tsc –init
 Posso specificare la cartella di destinazione  e la cartella di source
 
 
+**Per mandare in esecuzione**
+
+Il file lo esegue in js
+
+```
+	node nomeDelFile.js
+```
+
+
 
 # Basic types :
 
