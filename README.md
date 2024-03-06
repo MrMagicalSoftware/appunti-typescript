@@ -225,8 +225,14 @@ class MyPerson implements PersonInterface {
 
     	register(): string {
         	throw new Error("Method not implemented.")
+		//console.log("do something")
     	}
 }
+
+
+const tempPersona = new MyPerson()
+tempPersona.register()
+
 ```
 
 	
