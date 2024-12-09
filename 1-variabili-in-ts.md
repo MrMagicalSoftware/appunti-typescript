@@ -1,23 +1,23 @@
 # Dichiarazione delle variabili
 
 **let**
-Permette di dichiarare variabili il cui valore può cambiare.
+Permette di dichiarare variabili il cui valore può cambiare.<br>
 
-let nome: string = "Mario";
-let eta: number = 30;
-let attivo: boolean = true;
+let nome: string = "Mario"; <br>
+let eta: number = 30;<br>
+let attivo: boolean = true;<br><br>
 
 **const**
-Permette di dichiarare variabili il cui valore è immutabile.
+Permette di dichiarare variabili il cui valore è immutabile.<br><br>
 
-const PI: number = 3.14;
-const nome: string = "Luigi";
+const PI: number = 3.14;<br>
+const nome: string = "Luigi";<br><br><br>
 
-**var**
+**var**<br><br>
 Ancora valido, ma sconsigliato perché non rispetta il block scope (può causare comportamenti imprevedibili).
 
 
-
+______
 
 
 
