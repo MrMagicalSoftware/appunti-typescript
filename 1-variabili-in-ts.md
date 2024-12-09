@@ -1,4 +1,4 @@
-Dichiarazione delle variabili
+# Dichiarazione delle variabili
 
 **let**
 Permette di dichiarare variabili il cui valore può cambiare.
