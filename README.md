@@ -9,6 +9,10 @@
 
 > sudo npm i -g typescript
 
+oppure :
+
+> https://www.typescriptlang.org/play/
+
 # Controllare tsc -v
 
 Per compilare  :
